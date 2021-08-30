@@ -4,10 +4,10 @@
 @import "../../../node_modules/bootstrap/scss/_mixins.scss";
 
 @import './layout/layout';
-@import './layout/index';
-@import './layout/reserve-course';
-@import './layout/appointment-form';
-@import './layout/finish';
-@import './layout/course.info';
-@import './layout/curriculum';
-@import './layout/space';
+@import './pages/index';
+@import './pages/reserve-course';
+@import './pages/appointment-form';
+@import './pages/finish';
+@import './pages/course.info';
+@import './pages/curriculum';
+@import './pages/space';
