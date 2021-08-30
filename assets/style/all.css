@@ -1,0 +1,378 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&display=swap");
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.logo {
+  width: 96px;
+  height: 31px;
+}
+
+.input-content {
+  width: 350px;
+  height: 45px;
+}
+
+.icons-fixed {
+  z-index: 9999;
+}
+
+.banner-bg {
+  padding-top: 185px;
+  padding-bottom: 185px;
+  background-size: cover;
+  background-position: 0 100%;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/photo-1612157777902-5382bc6e864b.jpeg);
+}
+
+.card-feel {
+  height: 420px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-teach {
+  height: 628px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-ml-off {
+  margin-left: -95px;
+}
+
+.card-void {
+  height: 444px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-voidnobody {
+  height: 207px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-custom {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.card-img-course {
+  height: 445px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-img-choose {
+  height: 320px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-user {
+  width: 60px;
+  height: 60px;
+}
+
+@media (max-width: 991.98px) {
+  .card-feel {
+    width: 216px;
+    height: 252px;
+  }
+  .card-toptext {
+    width: 450px;
+  }
+  .card-void {
+    width: 210px;
+    height: 266px;
+  }
+  .card-voidnobody {
+    width: 90px;
+    height: 117px;
+  }
+  .card-custom {
+    max-width: 720px;
+  }
+  .card-img-course {
+    height: 150px;
+  }
+  .card-img-choose {
+    height: 100%;
+  }
+  .card-dir {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .card-dir div {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .card-feel {
+    width: 350px;
+    height: 420px;
+  }
+  .card-toptext {
+    width: 345px;
+  }
+  .card-ml-off {
+    margin-left: 0;
+  }
+  .card-void, .card-voidnobody {
+    width: 165px;
+    height: 210px;
+  }
+  .card-custom {
+    max-width: 540px;
+  }
+  .card-img-course {
+    height: 165px;
+  }
+  .card-img-choose {
+    height: 320px;
+  }
+  .card-dir {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card-dir div {
+    width: 100%;
+  }
+}
+
+.wrapper-course {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+@media (max-width: 992px) {
+  .wrapper-course {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.slide-course {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .slide-course {
+    width: 48%;
+    margin: 0.5rem 1%;
+  }
+}
+
+@media (min-width: 576px) {
+  .position-sm-absolute {
+    position: absolute;
+  }
+  .card-course-title {
+    top: 50%;
+    left: 0;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+
+.swiper-body {
+  width: 100%;
+  height: 100%;
+}
+
+.card-content-w {
+  height: 320px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-course-info {
+  width: 330px;
+}
+
+.card-check-icon {
+  opacity: 0.3;
+}
+
+@media (max-width: 991.98px) {
+  .card-content-w {
+    height: 150px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .card-content-w {
+    height: 320px;
+  }
+}
+
+.list-content {
+  width: 445px;
+}
+
+@media (max-width: 767.98px) {
+  .list-content {
+    width: 100%;
+  }
+}
+
+.first-learn {
+  width: 167px;
+}
+
+.form-write {
+  width: calc(100%/2);
+}
+
+.card-finish-w {
+  width: 540px;
+}
+
+.course-notice {
+  width: 350px;
+}
+
+@media (max-width: 767.98px) {
+  .card-finish-w {
+    width: 345px;
+  }
+}
+
+.card-course-info {
+  width: 540px;
+  height: 340px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-info {
+  height: 196px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-teacher {
+  width: 96px;
+  height: 96px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-teacher-message {
+  height: 418px;
+}
+
+.card-course-modal {
+  width: 418px;
+  height: 418px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 991.98px) {
+  .card-course-info {
+    width: 330px;
+  }
+  .card-teacher-message {
+    width: 330px;
+  }
+  .card-course-modal {
+    width: 264px;
+  }
+  .modal-lg {
+    width: 690px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .card-course-info {
+    width: 345px;
+  }
+  .card-course-modal {
+    width: 165px;
+    height: 165px;
+  }
+  .modal-lg {
+    width: 345px;
+  }
+}
+
+.swiper-content {
+  width: 100%;
+  height: 100%;
+}
+
+.card-course-list {
+  width: 920px;
+  height: 568px;
+}
+
+.card-notice {
+  width: 579px;
+}
+
+.swiper-list {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 767.98px) {
+  .card-notice {
+    width: 514px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .card-notice {
+    width: 305px;
+  }
+}
+
+.card-space-img {
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-img-space {
+  height: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 991.98px) {
+  .card-space-img {
+    height: 350px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .card-img-space {
+    width: 270px;
+    height: 196px;
+  }
+}
+
+.swiper-recommend {
+  width: 100%;
+  height: 100%;
+}
+
+.send {
+  width: 60px;
+}
+
+/*# sourceMappingURL=all.css.map */
