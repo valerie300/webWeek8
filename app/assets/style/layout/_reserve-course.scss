@@ -1,0 +1,37 @@
+.card{
+    &-content-w{
+        height: 320px;
+        object-fit: cover;
+    }
+    &-course-info{
+        width: 330px;
+    }
+    &-check-icon{
+        opacity: 0.3;
+    }
+}
+@include media-breakpoint-down(lg) {
+    .card{
+        &-content-w{
+            height: 150px;
+        }
+    } 
+}
+@include media-breakpoint-down(md) {
+    .card{
+        &-content-w{
+            height: 320px;
+        }
+    } 
+}
+.list-content{
+    width: 445px;
+}
+@include media-breakpoint-down(md) {
+    .list-content{
+        width: 100%;
+    }
+}
+.first-learn{
+    width: 167px;
+}
