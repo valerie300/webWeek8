@@ -65,32 +65,6 @@ var weswiper = new Swiper(".weSwiper", {
       spaceBetween: 30
     }
   }
-}); // 課表
-
-var listswiper = new Swiper(".listSwiper", {
-  slidesPerView: 1,
-  spaceBetween: 0,
-  observer: true,
-  //修改swiper自己或子元素時，自動初始化swiper
-  observeParents: true,
-  //修改swiper的父元素時，自動初始化swiper
-  breakpoints: {
-    // when window width is >= 320px
-    320: {
-      slidesPerView: 3,
-      spaceBetween: 20
-    },
-    // when window width is >= 480px
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 30
-    },
-    // when window width is >= 640px
-    960: {
-      slidesPerView: 1,
-      spaceBetween: 0
-    }
-  }
 }); // 課程推薦
 
 var recommendSwiper = new Swiper(".Swiper-recommend", {
@@ -102,6 +76,10 @@ var recommendSwiper = new Swiper(".Swiper-recommend", {
       slidesPerView: 1,
       spaceBetween: 0
     },
+    576: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
     // when window width is >= 480px
     768: {
       slidesPerView: 3,
@@ -112,6 +90,19 @@ var recommendSwiper = new Swiper(".Swiper-recommend", {
       slidesPerView: 4,
       spaceBetween: 30
     }
+  }
+}); // 聽聽他們怎麼說-手機
+
+var mineswiper = new Swiper(".mineSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  375: {
+    slidesPerView: 1,
+    spaceBetween: 30
+  },
+  navigation: {
+    nextEl: ".swiper-btn-next",
+    prevEl: ".swiper-btn-prev"
   }
 });
 //# sourceMappingURL=all.js.map

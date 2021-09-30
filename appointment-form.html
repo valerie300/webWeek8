@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>填寫預約表單</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.5/datepicker.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.5/datepicker.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
@@ -32,7 +35,7 @@
   <body class="position-relative">
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <img
             class="logo"
             src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/DOYOGA-logo.png"
@@ -53,28 +56,35 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
             <li class="nav-item">
-              <a class="nav-link active px-3" aria-current="page" href="#"
+              <a
+                class="nav-link active px-3"
+                aria-current="page"
+                href="course-info.html"
                 >課程介紹</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link px-3" href="#">瑜珈空間</a>
+              <a class="nav-link px-3" href="space.html">瑜珈空間</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link px-3" href="#">當月課表</a>
+              <a class="nav-link px-3" href="curriculum.html">當月課表</a>
             </li>
           </ul>
-          <form class="d-flex">
-            <button class="btn btn-outline-secondary py-2 px-3" type="submit">
+          <!-- 導覽列的「立即預約」「聯絡我們」外層不需使用 form 標籤，沒有送出資料的需求因此可以使用 a 標籤連結至指定頁面 -->
+          <div class="d-flex">
+            <a
+              class="btn btn-outline-secondary py-2 px-3"
+              href="reserve-course.html"
+            >
               立即預約
-            </button>
-            <button
+            </a>
+            <a
               class="btn btn-outline-secondary py-2 px-3 ms-3"
-              type="submit"
+              href="contact.html"
             >
               聯絡我們
-            </button>
-          </form>
+            </a>
+          </div>
         </div>
       </div>
     </nav>
@@ -90,280 +100,324 @@
         icons-fixed
       "
     >
-      <div class="d-flex flex-column">
-        <a href="#" class="mb-3">
-          <span class="fs-1 text-secondary"
-            ><i class="fab fa-facebook"></i></span
-        ></a>
-        <a href="#" class="mb-3">
-          <span class="fs-1 text-secondary"
-            ><i class="fab fa-instagram"></i></span
-        ></a>
-        <a href="#">
-          <span class="fs-1 text-secondary"><i class="fab fa-line"></i></span
-        ></a>
-      </div>
+      <ul class="d-flex flex-column list-unstyled">
+        <li class="mb-3">
+          <a href="#" class="mb-3">
+            <span class="fs-1 text-secondary"
+              ><i class="fab fa-facebook"></i></span
+          ></a>
+        </li>
+        <li class="mb-3">
+          <a href="#" class="mb-3">
+            <span class="fs-1 text-secondary"
+              ><i class="fab fa-instagram"></i></span
+          ></a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="fs-1 text-secondary"><i class="fab fa-line"></i></span
+          ></a>
+        </li>
+      </ul>
     </div>
     
 <section>
   <div class="container">
     <!-- 立即預約 -->
     <div class="pt-9">
-      <h2 class="h3 text-secondary text-center mb-3">立即預約</h2>
-      <div class="btn-body d-flex justify-content-center">
-        <button
-          type="button"
-          class="btn btn-light text-secondary px-3 px-md-7 py-md-3"
-        >
-          選擇方案
-        </button>
-        <button
-          type="button"
-          class="btn btn-secondary text-white px-3 px-md-7 py-md-3 mx-2 mx-md-5"
-        >
-          填寫資料
-        </button>
-        <button
-          type="button"
-          class="btn btn-light text-secondary px-3 px-md-7 py-md-3"
-        >
-          完成預約
-        </button>
-      </div>
+      <h1 class="h3 text-secondary text-center mb-3">立即預約</h1>
+      <!-- 預約步驟建議使用 ol li 結構 -->
+      <ol class="btn-body d-flex justify-content-center list-unstyled">
+        <li>
+          <a
+            href="reserve-course.html"
+            class="btn btn-light text-secondary px-3 px-md-7 py-md-3"
+          >
+            選擇方案
+          </a>
+        </li>
+        <li>
+          <a
+            href="appointment-form.html"
+            class="
+              btn btn-secondary
+              text-white
+              px-3 px-md-7
+              py-md-3
+              mx-2 mx-md-5
+            "
+          >
+            填寫資料
+          </a>
+        </li>
+        <li>
+          <a
+            href="finish.html"
+            class="btn btn-light text-secondary px-3 px-md-7 py-md-3"
+          >
+            完成預約
+          </a>
+        </li>
+      </ol>
     </div>
     <!-- 內容 -->
-    <div class="d-flex align-items-center justify-content-center my-6">
-      <h6 class="text-dark fw-normal me-3">您選擇的是</h6>
-      <h5 class="text-primary fw-normal">首次體驗課程-基礎</h5>
-    </div>
-    <div class="d-table mx-auto text-dark">
-      <h6 class="fw-normal mb-3">1. 是否接觸過瑜珈?</h6>
-      <div class="d-flex mb-4">
-        <div class="form-check me-5">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="flexRadioDefault"
-            id="flexRadioDefault1"
-          />
-          <label class="form-check-label" for="flexRadioDefault1"> 是 </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="flexRadioDefault"
-            id="flexRadioDefault2"
-            checked
-          />
-          <label class="form-check-label" for="flexRadioDefault2"> 否 </label>
-        </div>
+    <form action="">
+      <div class="d-flex align-items-center justify-content-center my-6">
+        <h6 class="text-dark fw-normal me-3">您選擇的是</h6>
+        <h5 class="text-primary fw-normal">首次體驗課程-基礎</h5>
       </div>
-      <h6 class="fw-normal mb-3">2. 想改善的生活問題?</h6>
-      <div class="d-flex">
-        <div class="form-check me-5">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckDefault"
-          />
-          <label class="form-check-label" for="flexCheckDefault">
-            肌耐力不足
-          </label>
+      <div class="d-table mx-auto text-dark">
+        <h6 class="fw-normal mb-3">1. 是否接觸過瑜珈?</h6>
+        <div class="d-flex mb-4">
+          <div class="form-check me-5">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault1"
+            />
+            <label class="form-check-label" for="flexRadioDefault1"> 是 </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault2"
+              checked
+            />
+            <label class="form-check-label" for="flexRadioDefault2"> 否 </label>
+          </div>
         </div>
-        <div class="form-check me-5">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-            checked
-          />
-          <label class="form-check-label" for="flexCheckChecked">
-            柔軟度不佳
-          </label>
+        <h6 class="fw-normal mb-3">2. 想改善的生活問題?</h6>
+        <div class="d-flex">
+          <div class="form-check me-5">
+            <input
+              name="life"
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckDefault"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              肌耐力不足
+            </label>
+          </div>
+          <div class="form-check me-5">
+            <input
+              name="life"
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckChecked"
+              checked
+            />
+            <label class="form-check-label" for="flexCheckChecked">
+              柔軟度不佳
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              name="life"
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckChecked2"
+              checked
+            />
+            <label class="form-check-label" for="flexCheckChecked2">
+              壓力大
+            </label>
+          </div>
         </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-            checked
-          />
-          <label class="form-check-label" for="flexCheckChecked">
-            壓力大
-          </label>
+        <div class="d-flex mt-3 mb-4">
+          <div class="form-check me-5">
+            <input
+              name="life"
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckDefault2"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              姿勢不正
+            </label>
+          </div>
+          <div class="form-check me-5">
+            <input
+              name="life"
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckChecked3"
+              checked
+            />
+            <label class="form-check-label" for="flexCheckChecked3">
+              睡眠品質差
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              name="life"
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckChecked4"
+              checked
+            />
+            <label class="form-check-label" for="flexCheckChecked4">
+              注意力不足
+            </label>
+          </div>
         </div>
-      </div>
-      <div class="d-flex mt-3 mb-4">
-        <div class="form-check me-5">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckDefault"
-          />
-          <label class="form-check-label" for="flexCheckDefault">
-            姿勢不正
-          </label>
+        <h6 class="fw-normal mb-3">3. 每週累積運動量約為多少？</h6>
+        <div class="d-flex mb-3">
+          <div class="form-check me-5">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexSportDefault"
+            />
+            <label class="form-check-label" for="flexSportDefault">
+              150 分鐘以上
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexSportDefault2"
+              checked
+            />
+            <label class="form-check-label" for="flexSportDefault2">
+              75~150 分鐘
+            </label>
+          </div>
         </div>
-        <div class="form-check me-5">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-            checked
-          />
-          <label class="form-check-label" for="flexCheckChecked">
-            睡眠品質差
-          </label>
+        <div class="d-flex mb-4">
+          <div class="form-check me-5">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexSportDefault3"
+            />
+            <label class="form-check-label" for="flexSportDefault4">
+              30~75 分鐘
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexSportDefault5"
+              checked
+            />
+            <label class="form-check-label" for="flexSportDefault5">
+              30 分鐘以下
+            </label>
+          </div>
         </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-            checked
-          />
-          <label class="form-check-label" for="flexCheckChecked">
-            注意力不足
-          </label>
-        </div>
-      </div>
-      <h6 class="fw-normal mb-3">3. 每週累積運動量約為多少？</h6>
-      <div class="d-flex mb-3">
-        <div class="form-check me-5">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="flexRadioDefault"
-            id="flexRadioDefault1"
-          />
-          <label class="form-check-label" for="flexRadioDefault1">
-            150 分鐘以上
-          </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="flexRadioDefault"
-            id="flexRadioDefault2"
-            checked
-          />
-          <label class="form-check-label" for="flexRadioDefault2">
-            75~150 分鐘
-          </label>
-        </div>
-      </div>
-      <div class="d-flex mb-4">
-        <div class="form-check me-5">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="flexRadioDefault"
-            id="flexRadioDefault1"
-          />
-          <label class="form-check-label" for="flexRadioDefault1">
-            30~75 分鐘
-          </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="flexRadioDefault"
-            id="flexRadioDefault2"
-            checked
-          />
-          <label class="form-check-label" for="flexRadioDefault2">
-            30 分鐘以下
-          </label>
-        </div>
-      </div>
-      <h6 class="fw-normal mb-1">4. 上課預約報到日</h6>
-      <p class="mb-3">
-        <small
-          >若還沒有確定的日期，可以等待專員與您聯絡時再做詳細的諮詢哦！</small
-        >
-      </p>
-      <!-- 日期沒有正確顯示 -->
-      <p>
-        <input
-          type="text"
-          id="datepicker"
-          class="form-control rounded-1 mb-3 border-primary"
-          placeholder="MM/DD/YYYY"
-          aria-label="MM/DD/YYYY"
-          aria-describedby="basic-addon1"
-        />
-      </p>
-      <h6 class="fw-normal mb-3">
-        5. 填寫基本資料，完成預約後會寄送通知至電子信箱
-      </h6>
-      <div class="d-flex">
-        <div class="form-write me-2">
-          <label for="name" name="name" value="name" class="mb-2">姓名</label>
+        <h6 class="fw-normal mb-1">4. 上課預約報到日</h6>
+        <p class="mb-3">
+          <small
+            >若還沒有確定的日期，可以等待專員與您聯絡時再做詳細的諮詢哦！</small
+          >
+        </p>
+        <!-- datepicker 套件無法顯示是因 vendor.js 中 slim 版本的 jquery（bootstrap 使用）
+        有覆蓋到 jQuery 的設定，將 datepicker 使用到的 js 改放到 vendor.js 後面引入就可執行 -->
+        <p>
           <input
             type="text"
+            id="datepicker"
             class="form-control rounded-1 mb-3 border-primary"
-            placeholder="請輸入您的姓名"
-            aria-label="請輸入您的姓名"
+            placeholder="MM/DD/YYYY"
+            aria-label="MM/DD/YYYY"
             aria-describedby="basic-addon1"
           />
+        </p>
+        <h6 class="fw-normal mb-3">
+          5. 填寫基本資料，完成預約後會寄送通知至電子信箱
+        </h6>
+        <div class="d-flex">
+          <div class="form-write me-2">
+            <label for="myName" name="name" value="name" class="mb-2"
+              >姓名</label
+            >
+            <input
+              id="myName"
+              type="text"
+              class="form-control rounded-1 mb-3 border-primary"
+              placeholder="請輸入您的姓名"
+              aria-label="請輸入您的姓名"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+          <div class="form-write">
+            <label for="myAge" name="age" value="age" class="mb-2">年齡</label>
+            <input
+              id="myAge"
+              type="number"
+              class="form-control rounded-1 mb-3 border-primary"
+              placeholder="請輸入您的年齡"
+              aria-label="請輸入您的年齡"
+              aria-describedby="basic-addon1"
+            />
+          </div>
         </div>
-        <div class="form-write">
-          <label for="age" name="age" value="age" class="mb-2">年齡</label>
+        <div class="form-write d-flex flex-column mb-4">
+          <label for="gender" name="gender" value="gender" class="mb-2"
+            >性別</label
+          >
+          <select class="border-primary">
+            <option>女</option>
+            <option>男</option>
+          </select>
+        </div>
+        <div class="mb-4">
+          <label for="myEmail" name="email" value="email" class="mb-2"
+            >電子信箱</label
+          >
           <input
-            type="number"
+            id="myEmail"
+            type="email"
             class="form-control rounded-1 mb-3 border-primary"
-            placeholder="請輸入您的年齡"
-            aria-label="請輸入您的年齡"
+            placeholder="email@example.com"
+            aria-label="email@example.com"
             aria-describedby="basic-addon1"
           />
         </div>
+        <div>
+          <label
+            for="myNumber"
+            type="tel"
+            name="number"
+            value="number"
+            class="mb-2"
+            >手機號碼</label
+          >
+          <input
+            id="myNumber"
+            type="text"
+            class="form-control rounded-1 mb-3 border-primary"
+            placeholder="0912345678"
+            aria-label="email@example.com"
+            aria-describedby="basic-addon1"
+          />
+        </div>
+        <div class="d-grid gap-2 mt-5 mb-10">
+          <a
+            href="finish.html"
+            class="btn btn-primary text-white rounded-2 py-2 fs-5"
+          >
+            送出
+          </a>
+        </div>
       </div>
-      <div class="form-write d-flex flex-column mb-4">
-        <label for="gender" name="gender" value="gender" class="mb-2"
-          >性別</label
-        >
-        <select class="border-primary">
-          <option>女</option>
-          <option>男</option>
-        </select>
-      </div>
-      <div class="mb-4">
-        <label for="email" name="email" value="email" class="mb-2"
-          >電子信箱</label
-        >
-        <input
-          type="email"
-          class="form-control rounded-1 mb-3 border-primary"
-          placeholder="email@example.com"
-          aria-label="email@example.com"
-          aria-describedby="basic-addon1"
-        />
-      </div>
-      <div>
-        <label for="number" name="number" value="number" class="mb-2"
-          >手機號碼</label
-        >
-        <input
-          type="text"
-          class="form-control rounded-1 mb-3 border-primary"
-          placeholder="email@example.com"
-          aria-label="email@example.com"
-          aria-describedby="basic-addon1"
-        />
-      </div>
-      <div class="d-grid gap-2 mt-5 mb-10">
-        <button type="button" class="btn btn-primary text-white rounded-2 py-2 fs-5">送出</button>
-      </div>
-    </div>
+    </form>
   </div>
 </section>
 
@@ -393,22 +447,27 @@
     <footer class="bg-secondary py-4 py-md-5">
       <div class="container d-flex justify-content-between">
         <div>
-          <img
-            class="logo"
-            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/DOYOGA.png"
-            alt="doyoga"
-          />
+          <a href="index.html">
+            <img
+              class="logo"
+              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/DOYOGA.png"
+              alt="doyoga"
+            />
+          </a>
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active text-white" aria-current="page" href="#"
+              <a
+                class="nav-link active text-white"
+                aria-current="page"
+                href="course-info.html"
                 >課程介紹</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">瑜珈空間</a>
+              <a class="nav-link text-white" href="space.html">瑜珈空間</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">當月課表</a>
+              <a class="nav-link text-white" href="curriculum.html">當月課表</a>
             </li>
           </ul>
           <p class="text-white d-block d-md-none">
@@ -418,24 +477,32 @@
         <p class="text-white align-self-md-end d-none d-md-block">
           © 2021. All Rights Reserved.
         </p>
-        <div>
-          <a href="#">
-            <span class="fs-2 text-white"><i class="fab fa-facebook"></i></span
-          ></a>
-          <a href="#" class="ms-2">
-            <span class="fs-2 text-white"><i class="fab fa-instagram"></i></span
-          ></a>
-          <a href="#" class="ms-2">
-            <span class="fs-2 text-white"><i class="fab fa-line"></i></span
-          ></a>
-        </div>
+        <ul class="d-flex list-unstyled">
+          <li>
+            <a href="#">
+              <span class="fs-2 text-white"
+                ><i class="fab fa-facebook"></i></span
+            ></a>
+          </li>
+          <li class="ms-2">
+            <a href="#">
+              <span class="fs-2 text-white"
+                ><i class="fab fa-instagram"></i></span
+            ></a>
+          </li>
+          <li class="ms-2">
+            <a href="#">
+              <span class="fs-2 text-white"><i class="fab fa-line"></i></span
+            ></a>
+          </li>
+        </ul>
       </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
 </html>

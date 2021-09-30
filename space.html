@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>瑜珈空間</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.5/datepicker.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.5/datepicker.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
@@ -32,7 +35,7 @@
   <body class="position-relative">
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <img
             class="logo"
             src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/DOYOGA-logo.png"
@@ -53,28 +56,35 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
             <li class="nav-item">
-              <a class="nav-link active px-3" aria-current="page" href="#"
+              <a
+                class="nav-link active px-3"
+                aria-current="page"
+                href="course-info.html"
                 >課程介紹</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link px-3" href="#">瑜珈空間</a>
+              <a class="nav-link px-3" href="space.html">瑜珈空間</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link px-3" href="#">當月課表</a>
+              <a class="nav-link px-3" href="curriculum.html">當月課表</a>
             </li>
           </ul>
-          <form class="d-flex">
-            <button class="btn btn-outline-secondary py-2 px-3" type="submit">
+          <!-- 導覽列的「立即預約」「聯絡我們」外層不需使用 form 標籤，沒有送出資料的需求因此可以使用 a 標籤連結至指定頁面 -->
+          <div class="d-flex">
+            <a
+              class="btn btn-outline-secondary py-2 px-3"
+              href="reserve-course.html"
+            >
               立即預約
-            </button>
-            <button
+            </a>
+            <a
               class="btn btn-outline-secondary py-2 px-3 ms-3"
-              type="submit"
+              href="contact.html"
             >
               聯絡我們
-            </button>
-          </form>
+            </a>
+          </div>
         </div>
       </div>
     </nav>
@@ -90,19 +100,25 @@
         icons-fixed
       "
     >
-      <div class="d-flex flex-column">
-        <a href="#" class="mb-3">
-          <span class="fs-1 text-secondary"
-            ><i class="fab fa-facebook"></i></span
-        ></a>
-        <a href="#" class="mb-3">
-          <span class="fs-1 text-secondary"
-            ><i class="fab fa-instagram"></i></span
-        ></a>
-        <a href="#">
-          <span class="fs-1 text-secondary"><i class="fab fa-line"></i></span
-        ></a>
-      </div>
+      <ul class="d-flex flex-column list-unstyled">
+        <li class="mb-3">
+          <a href="#" class="mb-3">
+            <span class="fs-1 text-secondary"
+              ><i class="fab fa-facebook"></i></span
+          ></a>
+        </li>
+        <li class="mb-3">
+          <a href="#" class="mb-3">
+            <span class="fs-1 text-secondary"
+              ><i class="fab fa-instagram"></i></span
+          ></a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="fs-1 text-secondary"><i class="fab fa-line"></i></span
+          ></a>
+        </li>
+      </ul>
     </div>
     
 <!-- 瑜珈空間 -->
@@ -363,22 +379,27 @@
     <footer class="bg-secondary py-4 py-md-5">
       <div class="container d-flex justify-content-between">
         <div>
-          <img
-            class="logo"
-            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/DOYOGA.png"
-            alt="doyoga"
-          />
+          <a href="index.html">
+            <img
+              class="logo"
+              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/DOYOGA.png"
+              alt="doyoga"
+            />
+          </a>
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active text-white" aria-current="page" href="#"
+              <a
+                class="nav-link active text-white"
+                aria-current="page"
+                href="course-info.html"
                 >課程介紹</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">瑜珈空間</a>
+              <a class="nav-link text-white" href="space.html">瑜珈空間</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">當月課表</a>
+              <a class="nav-link text-white" href="curriculum.html">當月課表</a>
             </li>
           </ul>
           <p class="text-white d-block d-md-none">
@@ -388,24 +409,32 @@
         <p class="text-white align-self-md-end d-none d-md-block">
           © 2021. All Rights Reserved.
         </p>
-        <div>
-          <a href="#">
-            <span class="fs-2 text-white"><i class="fab fa-facebook"></i></span
-          ></a>
-          <a href="#" class="ms-2">
-            <span class="fs-2 text-white"><i class="fab fa-instagram"></i></span
-          ></a>
-          <a href="#" class="ms-2">
-            <span class="fs-2 text-white"><i class="fab fa-line"></i></span
-          ></a>
-        </div>
+        <ul class="d-flex list-unstyled">
+          <li>
+            <a href="#">
+              <span class="fs-2 text-white"
+                ><i class="fab fa-facebook"></i></span
+            ></a>
+          </li>
+          <li class="ms-2">
+            <a href="#">
+              <span class="fs-2 text-white"
+                ><i class="fab fa-instagram"></i></span
+            ></a>
+          </li>
+          <li class="ms-2">
+            <a href="#">
+              <span class="fs-2 text-white"><i class="fab fa-line"></i></span
+            ></a>
+          </li>
+        </ul>
       </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
 </html>
