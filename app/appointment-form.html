@@ -9,260 +9,298 @@ current: index
   <div class="container">
     <!-- 立即預約 -->
     <div class="pt-9">
-      <h2 class="h3 text-secondary text-center mb-3">立即預約</h2>
-      <div class="btn-body d-flex justify-content-center">
-        <button
-          type="button"
-          class="btn btn-light text-secondary px-3 px-md-7 py-md-3"
-        >
-          選擇方案
-        </button>
-        <button
-          type="button"
-          class="btn btn-secondary text-white px-3 px-md-7 py-md-3 mx-2 mx-md-5"
-        >
-          填寫資料
-        </button>
-        <button
-          type="button"
-          class="btn btn-light text-secondary px-3 px-md-7 py-md-3"
-        >
-          完成預約
-        </button>
-      </div>
+      <h1 class="h3 text-secondary text-center mb-3">立即預約</h1>
+      <!-- 預約步驟建議使用 ol li 結構 -->
+      <ol class="btn-body d-flex justify-content-center list-unstyled">
+        <li>
+          <a
+            href="reserve-course.html"
+            class="btn btn-light text-secondary px-3 px-md-7 py-md-3"
+          >
+            選擇方案
+          </a>
+        </li>
+        <li>
+          <a
+            href="appointment-form.html"
+            class="
+              btn btn-secondary
+              text-white
+              px-3 px-md-7
+              py-md-3
+              mx-2 mx-md-5
+            "
+          >
+            填寫資料
+          </a>
+        </li>
+        <li>
+          <a
+            href="finish.html"
+            class="btn btn-light text-secondary px-3 px-md-7 py-md-3"
+          >
+            完成預約
+          </a>
+        </li>
+      </ol>
     </div>
     <!-- 內容 -->
-    <div class="d-flex align-items-center justify-content-center my-6">
-      <h6 class="text-dark fw-normal me-3">您選擇的是</h6>
-      <h5 class="text-primary fw-normal">首次體驗課程-基礎</h5>
-    </div>
-    <div class="d-table mx-auto text-dark">
-      <h6 class="fw-normal mb-3">1. 是否接觸過瑜珈?</h6>
-      <div class="d-flex mb-4">
-        <div class="form-check me-5">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="flexRadioDefault"
-            id="flexRadioDefault1"
-          />
-          <label class="form-check-label" for="flexRadioDefault1"> 是 </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="flexRadioDefault"
-            id="flexRadioDefault2"
-            checked
-          />
-          <label class="form-check-label" for="flexRadioDefault2"> 否 </label>
-        </div>
+    <form action="">
+      <div class="d-flex align-items-center justify-content-center my-6">
+        <h6 class="text-dark fw-normal me-3">您選擇的是</h6>
+        <h5 class="text-primary fw-normal">首次體驗課程-基礎</h5>
       </div>
-      <h6 class="fw-normal mb-3">2. 想改善的生活問題?</h6>
-      <div class="d-flex">
-        <div class="form-check me-5">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckDefault"
-          />
-          <label class="form-check-label" for="flexCheckDefault">
-            肌耐力不足
-          </label>
+      <div class="d-table mx-auto text-dark">
+        <h6 class="fw-normal mb-3">1. 是否接觸過瑜珈?</h6>
+        <div class="d-flex mb-4">
+          <div class="form-check me-5">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault1"
+            />
+            <label class="form-check-label" for="flexRadioDefault1"> 是 </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault2"
+              checked
+            />
+            <label class="form-check-label" for="flexRadioDefault2"> 否 </label>
+          </div>
         </div>
-        <div class="form-check me-5">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-            checked
-          />
-          <label class="form-check-label" for="flexCheckChecked">
-            柔軟度不佳
-          </label>
+        <h6 class="fw-normal mb-3">2. 想改善的生活問題?</h6>
+        <div class="d-flex">
+          <div class="form-check me-5">
+            <input
+              name="life"
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckDefault"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              肌耐力不足
+            </label>
+          </div>
+          <div class="form-check me-5">
+            <input
+              name="life"
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckChecked"
+              checked
+            />
+            <label class="form-check-label" for="flexCheckChecked">
+              柔軟度不佳
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              name="life"
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckChecked2"
+              checked
+            />
+            <label class="form-check-label" for="flexCheckChecked2">
+              壓力大
+            </label>
+          </div>
         </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-            checked
-          />
-          <label class="form-check-label" for="flexCheckChecked">
-            壓力大
-          </label>
+        <div class="d-flex mt-3 mb-4">
+          <div class="form-check me-5">
+            <input
+              name="life"
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckDefault2"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              姿勢不正
+            </label>
+          </div>
+          <div class="form-check me-5">
+            <input
+              name="life"
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckChecked3"
+              checked
+            />
+            <label class="form-check-label" for="flexCheckChecked3">
+              睡眠品質差
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              name="life"
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckChecked4"
+              checked
+            />
+            <label class="form-check-label" for="flexCheckChecked4">
+              注意力不足
+            </label>
+          </div>
         </div>
-      </div>
-      <div class="d-flex mt-3 mb-4">
-        <div class="form-check me-5">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckDefault"
-          />
-          <label class="form-check-label" for="flexCheckDefault">
-            姿勢不正
-          </label>
+        <h6 class="fw-normal mb-3">3. 每週累積運動量約為多少？</h6>
+        <div class="d-flex mb-3">
+          <div class="form-check me-5">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexSportDefault"
+            />
+            <label class="form-check-label" for="flexSportDefault">
+              150 分鐘以上
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexSportDefault2"
+              checked
+            />
+            <label class="form-check-label" for="flexSportDefault2">
+              75~150 分鐘
+            </label>
+          </div>
         </div>
-        <div class="form-check me-5">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-            checked
-          />
-          <label class="form-check-label" for="flexCheckChecked">
-            睡眠品質差
-          </label>
+        <div class="d-flex mb-4">
+          <div class="form-check me-5">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexSportDefault3"
+            />
+            <label class="form-check-label" for="flexSportDefault4">
+              30~75 分鐘
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexSportDefault5"
+              checked
+            />
+            <label class="form-check-label" for="flexSportDefault5">
+              30 分鐘以下
+            </label>
+          </div>
         </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-            checked
-          />
-          <label class="form-check-label" for="flexCheckChecked">
-            注意力不足
-          </label>
-        </div>
-      </div>
-      <h6 class="fw-normal mb-3">3. 每週累積運動量約為多少？</h6>
-      <div class="d-flex mb-3">
-        <div class="form-check me-5">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="flexRadioDefault"
-            id="flexRadioDefault1"
-          />
-          <label class="form-check-label" for="flexRadioDefault1">
-            150 分鐘以上
-          </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="flexRadioDefault"
-            id="flexRadioDefault2"
-            checked
-          />
-          <label class="form-check-label" for="flexRadioDefault2">
-            75~150 分鐘
-          </label>
-        </div>
-      </div>
-      <div class="d-flex mb-4">
-        <div class="form-check me-5">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="flexRadioDefault"
-            id="flexRadioDefault1"
-          />
-          <label class="form-check-label" for="flexRadioDefault1">
-            30~75 分鐘
-          </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="flexRadioDefault"
-            id="flexRadioDefault2"
-            checked
-          />
-          <label class="form-check-label" for="flexRadioDefault2">
-            30 分鐘以下
-          </label>
-        </div>
-      </div>
-      <h6 class="fw-normal mb-1">4. 上課預約報到日</h6>
-      <p class="mb-3">
-        <small
-          >若還沒有確定的日期，可以等待專員與您聯絡時再做詳細的諮詢哦！</small
-        >
-      </p>
-      <!-- 日期沒有正確顯示 -->
-      <p>
-        <input
-          type="text"
-          id="datepicker"
-          class="form-control rounded-1 mb-3 border-primary"
-          placeholder="MM/DD/YYYY"
-          aria-label="MM/DD/YYYY"
-          aria-describedby="basic-addon1"
-        />
-      </p>
-      <h6 class="fw-normal mb-3">
-        5. 填寫基本資料，完成預約後會寄送通知至電子信箱
-      </h6>
-      <div class="d-flex">
-        <div class="form-write me-2">
-          <label for="name" name="name" value="name" class="mb-2">姓名</label>
+        <h6 class="fw-normal mb-1">4. 上課預約報到日</h6>
+        <p class="mb-3">
+          <small
+            >若還沒有確定的日期，可以等待專員與您聯絡時再做詳細的諮詢哦！</small
+          >
+        </p>
+        <!-- datepicker 套件無法顯示是因 vendor.js 中 slim 版本的 jquery（bootstrap 使用）
+        有覆蓋到 jQuery 的設定，將 datepicker 使用到的 js 改放到 vendor.js 後面引入就可執行 -->
+        <p>
           <input
             type="text"
+            id="datepicker"
             class="form-control rounded-1 mb-3 border-primary"
-            placeholder="請輸入您的姓名"
-            aria-label="請輸入您的姓名"
+            placeholder="MM/DD/YYYY"
+            aria-label="MM/DD/YYYY"
             aria-describedby="basic-addon1"
           />
+        </p>
+        <h6 class="fw-normal mb-3">
+          5. 填寫基本資料，完成預約後會寄送通知至電子信箱
+        </h6>
+        <div class="d-flex">
+          <div class="form-write me-2">
+            <label for="myName" name="name" value="name" class="mb-2"
+              >姓名</label
+            >
+            <input
+              id="myName"
+              type="text"
+              class="form-control rounded-1 mb-3 border-primary"
+              placeholder="請輸入您的姓名"
+              aria-label="請輸入您的姓名"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+          <div class="form-write">
+            <label for="myAge" name="age" value="age" class="mb-2">年齡</label>
+            <input
+              id="myAge"
+              type="number"
+              class="form-control rounded-1 mb-3 border-primary"
+              placeholder="請輸入您的年齡"
+              aria-label="請輸入您的年齡"
+              aria-describedby="basic-addon1"
+            />
+          </div>
         </div>
-        <div class="form-write">
-          <label for="age" name="age" value="age" class="mb-2">年齡</label>
+        <div class="form-write d-flex flex-column mb-4">
+          <label for="gender" name="gender" value="gender" class="mb-2"
+            >性別</label
+          >
+          <select class="border-primary">
+            <option>女</option>
+            <option>男</option>
+          </select>
+        </div>
+        <div class="mb-4">
+          <label for="myEmail" name="email" value="email" class="mb-2"
+            >電子信箱</label
+          >
           <input
-            type="number"
+            id="myEmail"
+            type="email"
             class="form-control rounded-1 mb-3 border-primary"
-            placeholder="請輸入您的年齡"
-            aria-label="請輸入您的年齡"
+            placeholder="email@example.com"
+            aria-label="email@example.com"
             aria-describedby="basic-addon1"
           />
         </div>
+        <div>
+          <label
+            for="myNumber"
+            type="tel"
+            name="number"
+            value="number"
+            class="mb-2"
+            >手機號碼</label
+          >
+          <input
+            id="myNumber"
+            type="text"
+            class="form-control rounded-1 mb-3 border-primary"
+            placeholder="0912345678"
+            aria-label="email@example.com"
+            aria-describedby="basic-addon1"
+          />
+        </div>
+        <div class="d-grid gap-2 mt-5 mb-10">
+          <a
+            href="finish.html"
+            class="btn btn-primary text-white rounded-2 py-2 fs-5"
+          >
+            送出
+          </a>
+        </div>
       </div>
-      <div class="form-write d-flex flex-column mb-4">
-        <label for="gender" name="gender" value="gender" class="mb-2"
-          >性別</label
-        >
-        <select class="border-primary">
-          <option>女</option>
-          <option>男</option>
-        </select>
-      </div>
-      <div class="mb-4">
-        <label for="email" name="email" value="email" class="mb-2"
-          >電子信箱</label
-        >
-        <input
-          type="email"
-          class="form-control rounded-1 mb-3 border-primary"
-          placeholder="email@example.com"
-          aria-label="email@example.com"
-          aria-describedby="basic-addon1"
-        />
-      </div>
-      <div>
-        <label for="number" name="number" value="number" class="mb-2"
-          >手機號碼</label
-        >
-        <input
-          type="text"
-          class="form-control rounded-1 mb-3 border-primary"
-          placeholder="email@example.com"
-          aria-label="email@example.com"
-          aria-describedby="basic-addon1"
-        />
-      </div>
-      <div class="d-grid gap-2 mt-5 mb-10">
-        <button type="button" class="btn btn-primary text-white rounded-2 py-2 fs-5">送出</button>
-      </div>
-    </div>
+    </form>
   </div>
 </section>

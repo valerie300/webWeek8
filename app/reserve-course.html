@@ -9,34 +9,47 @@ current: index
 <section>
   <div class="container">
     <div class="pt-9">
-      <h2 class="h3 text-secondary text-center mb-3">立即預約</h2>
-      <div class="btn-body d-flex justify-content-center">
-        <button
-          type="button"
-          class="btn btn-secondary text-white px-3 px-md-7 py-md-3"
-        >
-          選擇方案
-        </button>
-        <button
-          type="button"
-          class="btn btn-light text-secondary px-3 px-md-7 py-md-3 mx-2 mx-md-5"
-        >
-          填寫資料
-        </button>
-        <button
-          type="button"
-          class="btn btn-light text-secondary px-3 px-md-7 py-md-3"
-        >
-          完成預約
-        </button>
-      </div>
+      <h1 class="h3 text-secondary text-center mb-3">立即預約</h1>
+      <!-- 預約步驟建議使用 ol li 結構 -->
+      <ol class="btn-body d-flex justify-content-center list-unstyled">
+        <li>
+          <a
+            href="reserve-course.html"
+            class="btn btn-secondary text-white px-3 px-md-7 py-md-3"
+          >
+            選擇方案
+          </a>
+        </li>
+        <li>
+          <a
+            href="appointment-form.html"
+            class="
+              btn btn-light
+              text-secondary
+              px-3 px-md-7
+              py-md-3
+              mx-2 mx-md-5
+            "
+          >
+            填寫資料
+          </a>
+        </li>
+        <li>
+          <a
+            href="finish.html"
+            class="btn btn-light text-secondary px-3 px-md-7 py-md-3"
+          >
+            完成預約
+          </a>
+        </li>
+      </ol>
     </div>
   </div>
 </section>
 <!-- 課程選擇 -->
 <section class="container mt-6 mb-6 mb-lg-8 mb-md-6">
-  <div class="row position-relative">
-    <div class="col-md-4 mb-3">
+  <ul class="row position-relative list-unstyled">
+    <li class="col-md-4 mb-3">
       <div class="card border-dark">
         <div>
           <img
@@ -51,7 +64,7 @@ current: index
           <p class="card-text text-secondary mb-6">
             分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。
           </p>
-          <a href="#" class="btn btn-dark text-white d-grid gap-2 rounded-1"
+          <a href="course-info.html" class="btn btn-dark text-white d-grid gap-2 rounded-1"
             >選擇課程</a
           >
         </div>
@@ -71,8 +84,8 @@ current: index
           arrow_drop_down
         </span>
       </div>
-    </div>
-    <div class="col-md-4 mb-3">
+    </li>
+    <li class="col-md-4 mb-3">
       <div class="card border-dark">
         <div>
           <img
@@ -87,13 +100,13 @@ current: index
           <p class="card-text text-secondary mb-6">
             分基礎、中級、高級可以選擇。想試著培養瑜珈習慣者可以選擇此方案。
           </p>
-          <a href="#" class="btn btn-dark text-white d-grid gap-2 rounded-1"
+          <a href="course-info.html" class="btn btn-dark text-white d-grid gap-2 rounded-1"
             >選擇課程</a
           >
         </div>
       </div>
-    </div>
-    <div class="col-md-4 mb-3">
+    </li>
+    <li class="col-md-4 mb-3">
       <div class="card border-dark">
         <div>
           <img
@@ -108,13 +121,13 @@ current: index
           <p class="card-text text-secondary mb-6">
             分基礎、中級、高級可以選擇。有長期習慣做瑜伽者建議選擇此方案。
           </p>
-          <a href="#" class="btn btn-dark text-white d-grid gap-2 rounded-1"
+          <a href="course-info.html" class="btn btn-dark text-white d-grid gap-2 rounded-1"
             >選擇課程</a
           >
         </div>
       </div>
-    </div>
-  </div>
+    </li>
+  </ul>
 </section>
 <!-- 選擇課程階級 -->
 <section

@@ -10,7 +10,7 @@ current: index
   <div class="container">
     <h2 class="h3 text-secondary text-center mb-3 mt-9">課程介紹</h2>
     <div class="row mt-4 mt-lg-5">
-      <div class="col-12 col-md-6 offset-lg-1">
+      <div class="col-md-6 offset-lg-1">
         <div class="card border-0">
           <img
             class="card-img card-course-info"
@@ -19,7 +19,7 @@ current: index
           />
         </div>
       </div>
-      <div class="col-12 col-md-6 col-lg-4 g-lg-0">
+      <div class="col-md-6 col-lg-4 g-lg-0">
         <h3 class="text-secondary mt-2 mt-md-0">本月限定課程 - 空中瑜珈</h3>
         <p class="text-primary">
           授課老師：Carol Tang<span
@@ -165,7 +165,7 @@ current: index
                         />
                       </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-5 offset-md-1">
+                    <div class="col-md-6 col-lg-5 offset-md-1">
                       <h3 class="text-white mt-2 mt-md-0">基礎 Basic</h3>
                       <p class="text-white">
                         授課老師：Carol Tang<span
@@ -497,9 +497,12 @@ current: index
 </section>
 <!-- 師資介紹 -->
 <section class="mt-9 border-top border-2 border-secondary">
-  <h2 class="h3 text-secondary text-center mb-3 my-9">師資介紹</h2>
-  <div class="row justify-content-end">
-    <div class="col-sm-11 px-lg-0 overflow-hidden py-10">
+  <!-- 師資介紹 PC 版、平板要放在 .container 中，並加上 flex-nowrap 讓超出的部分不會自動換行，不需加上 overflow-hidden -->
+  <div class="container overflow-hidden">
+    <h2 class="h3 text-secondary text-center mb-3 my-9">師資介紹</h2>
+    <!-- row 的左右 margin 負值會產生 x 軸，可以加上 .g-0 消除 margin 負值 -->
+  <div class="row flex-nowrap justify-content-end g-0 ">
+    <div class="col-sm-11 px-lg-0 py-10">
       <div class="swiper-content weSwiper px-5 px-md-0">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -648,5 +651,6 @@ current: index
         </div>
       </div>
     </div>
+  </div>
   </div>
 </section>

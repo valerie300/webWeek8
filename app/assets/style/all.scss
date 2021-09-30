@@ -1,5 +1,6 @@
 @import "../../../node_modules/bootstrap/scss/functions";
-@import "../../../node_modules/bootstrap/scss/variables";
+// all.scss 變數可以 import helpers 資料夾，若是 import node_modules 的變數其他人載下來就會是 Bootstrap 原本的設定
+@import "./helpers/variables";
 @import "../../../node_modules/bootstrap/scss/mixins/_breakpoints.scss";
 @import "../../../node_modules/bootstrap/scss/_mixins.scss";
 
@@ -7,7 +8,6 @@
 @import './pages/index';
 @import './pages/reserve-course';
 @import './pages/appointment-form';
-@import './pages/finish';
-@import './pages/course.info';
+@import './pages/course-info';
 @import './pages/curriculum';
 @import './pages/space';

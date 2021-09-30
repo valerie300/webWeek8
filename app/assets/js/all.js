@@ -71,6 +71,10 @@ var recommendSwiper = new Swiper(".Swiper-recommend", {
       slidesPerView: 1,
       spaceBetween: 0,
     },
+    576: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
     // when window width is >= 480px
     768: {
       slidesPerView: 3,
@@ -81,5 +85,18 @@ var recommendSwiper = new Swiper(".Swiper-recommend", {
       slidesPerView: 4,
       spaceBetween: 30,
     },
+  },
+});
+// 聽聽他們怎麼說-手機
+var mineswiper = new Swiper(".mineSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  375: {
+    slidesPerView: 1,
+    spaceBetween: 30,
+  },
+  navigation: {
+    nextEl: ".swiper-btn-next",
+    prevEl: ".swiper-btn-prev",
   },
 });
